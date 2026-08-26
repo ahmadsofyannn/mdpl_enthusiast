@@ -318,20 +318,27 @@ body {
   background-color: #0f1115;
   border: 1px solid #21262d;
   border-radius: 10px;
-  padding: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
   width: 100%;
 }
 
 .description {
   font-size: 0.85rem;
-  color: #c9d1d9;
-  line-height: 1.5;
-  font-weight: 400;
+  color: #ffffff;
+  line-height: 1.4;
+  font-weight: 500;
   letter-spacing: -0.1px;
   margin: 0;
+  padding-top: 0px;
+  padding-bottom: 4px;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
 .date-badge {
@@ -352,7 +359,7 @@ body {
 .location-container {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   margin-top: 8px;
   margin-bottom: 8px;
 }
@@ -360,7 +367,7 @@ body {
 .location-badge {
   display: inline-flex;
   align-items: center;
-  height: 26px;
+  height: 28px;
   padding: 0 8px;
   background-color: transparent;
   border: 1px solid rgba(56, 139, 253, 0.35);
@@ -406,10 +413,13 @@ body {
 
 .location-hint {
   font-size: 11px;
-  color: #8b949e;
-  font-style: italic;
+  color: #ffffff;
+  font-style: normal;
   white-space: nowrap;
   pointer-events: none;
+  display: inline-block;
+  transform: translateY(0.5px); /* Naikkan 2px sampai 4px sesuai selera */
+  line-height: 0;
 }
 
 /* Kapsul Lagu */
@@ -473,23 +483,23 @@ body {
   background-color: rgba(163, 113, 247, 0.12);
   border: 1px solid rgba(163, 113, 247, 0.4);
   border-radius: 10px;
-  padding: 12px 14px;
+  padding: 6px 10px;
   width: 100%;
-  max-width: 400px;
+  max-width: 340px;
   margin-top: 6px;
   transition: all 0.2s ease;
 }
 
 .purple-player-card.playing {
   background-color: rgba(163, 113, 247, 0.22);
-  border-color: #0018a1;
+  border-color: #5800a1;
 }
 
 .player-song-text {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: #d2a8ff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #ffffff;
   display: block;
   white-space: nowrap;
   overflow: hidden;
@@ -536,11 +546,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: -10px;
+  margin-bottom: -2px;
 }
 
 .player-time {
   font-size: 0.65rem;
-  color: #b388ff;
+  color: #ffffff;
   font-family: 'JetBrains Mono', monospace;
 }
 
@@ -562,7 +574,7 @@ body {
 }
 
 .btn-play {
-  font-size: 22px;
+  font-size: 16px;
   width: 36px;
   height: 36px;
   display: flex;
@@ -570,7 +582,7 @@ body {
   justify-content: center;
   border: none;
   background: transparent;
-  color: #d2a8ff;
+  color: #ffffff;
   cursor: pointer;
   transition: transform 0.2s ease;
 }
@@ -596,8 +608,8 @@ body {
 .time-stamp {
   text-align: center;
   color: #ffffff;
-  font-size: 0.85rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 750;
 }
 
 .footer-subtitle {

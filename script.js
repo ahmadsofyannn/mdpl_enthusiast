@@ -13,7 +13,7 @@ const database = {
       mapUrl: "https://maps.google.com/?q=Gunung+Semeru",
       deskripsi: "Atap tertinggi Pulau Jawa yang melegenda. Menawarkan keindahan danau Ranu Kumbolo, hamparan Oro-Oro Ombo, serta tantangan trek pasir terjal menuju Puncak Mahameru.",
       tanggal: "Pendakian : When Yah",
-      foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
+      foto: ["image/kosong.jpg", "image/semeru1.jpg", "image/kosong.jpg"]
     },
     {
       id: 2,
@@ -631,7 +631,9 @@ function updatePlayerUI(id) {
     progressSlider.max = dur || 100;
     progressSlider.value = cur;
     const pct = dur ? (cur / dur) * 100 : 0;
-    progressSlider.style.background = `linear-gradient(to right, #d2a8ff ${pct}%, rgba(255, 255, 255, 0.15) ${pct}%)`;
+    
+    // Garis berjalan putih, sisa garis transparan/gelap
+    progressSlider.style.background = `linear-gradient(to right, #ffffff ${pct}%, rgba(255, 255, 255, 0.2) ${pct}%)`;
   }
 
   if (playBtn) playBtn.textContent = currentAudio.paused ? '▶' : '⏸';
