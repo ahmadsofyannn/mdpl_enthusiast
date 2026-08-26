@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>MDPL ENTHUSIAST</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- HALAMAN 1: Pilihan Wilayah -->
+    <div id="page-wilayah" class="page">
+      <h1 class="main-title">MDPL ENTHUSIAST</h1>
+      
+      <!-- Galeri 3 Foto Header -->
+      <div class="profile-gallery">
+        <img src="image/mendaki.jpg" alt="MDPL Logo 1" class="profile-img" onclick="openImageModal(event, 'image/mendaki.jpg')">
+        <img src="image/patrick.jpg" alt="MDPL Logo 2" class="profile-img" onclick="openImageModal(event, 'image/patrick.jpg')">
+        <img src="image/muncak.jpg" alt="MDPL Logo 3" class="profile-img" onclick="openImageModal(event, 'image/muncak.jpg')">
+      </div>
+      
+      <input type="text" id="search-wilayah" class="search-input" placeholder="Cari wilayah...">
+      
+      <!-- Daftar Kartu Wilayah -->
+      <div id="wilayah-list" class="card-list"></div>
+
+      <!-- Kolom Jam & Footer Subtitle -->
+      <div class="card time-card">
+        <div id="current-time" class="time-stamp"></div>
+      </div>
+      <p class="footer-subtitle">SEDIKIT DEMI SEDIKIT LAMA-LAMA SEVEN SUMMITS</p>
+    </div>
+
+    <!-- HALAMAN 2: Daftar Gunung -->
+    <div id="page-gunung" class="page hidden">
+      <h1 id="title-wilayah" class="main-title">JAWA TIMUR</h1>
+      
+      <button id="btn-back" class="btn-back">&larr; Kembali ke Wilayah</button>
+
+      <input type="text" id="search-gunung" class="search-input" placeholder="Search gunung...">
+      <div id="gunung-list" class="card-list"></div>
+    </div> <!-- Penutup elemen #page-gunung yang diperbaiki -->
+
+    <!-- Modal Preview Gambar -->
+    <div id="image-modal" class="modal" onclick="closeImageModal()">
+      <span class="close-btn" onclick="closeImageModal()">&times;</span>
+      <img class="modal-content" id="img-preview" alt="Preview Gambar">
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
