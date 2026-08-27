@@ -1,4 +1,4 @@
-// Database Gunung
+// Database Gunung (Deskripsi telah dihapus)
 const database = {
   "JAWA TIMUR": [
     {
@@ -11,9 +11,8 @@ const database = {
       lagu: "NIDJI - Rahasia Hati",
       audioSrc: "audio/Nidji - Rahasia Hati.mp3",
       mapUrl: "https://maps.google.com/?q=Gunung+Semeru",
-      deskripsi: "Atap tertinggi Pulau Jawa yang melegenda. Menawarkan keindahan danau Ranu Kumbolo, hamparan Oro-Oro Ombo, serta tantangan trek pasir terjal menuju Puncak Mahameru.",
       tanggal: "Pendakian : When Yah",
-      foto: ["image/kosong.jpg", "image/semeru1.jpg", "image/kosong.jpg"]
+      foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
     },
     {
       id: 2,
@@ -25,7 +24,6 @@ const database = {
       lagu: "-",
       audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Arjuno",
-      deskripsi: "Raksasa Jawa Timur dengan trek panjang dan terjal. Kaya akan situs sejarah peninggalan Kerajaan Singhasari serta pemandangan sabana Alas Lali Jiwo yang magis.",
       tanggal: "Pendakian : When Yah",
       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
     },
@@ -36,12 +34,15 @@ const database = {
       mdpl: "3.332 MDPL",
       status: "done",
       lokasi: "Bondowoso",
-      lagu: "-",
-      audioSrc: "-",
+      lagu: "nidi",
+      audioSrc: "audio/Nidji - Rahasia Hati.mp3",
       mapUrl: "https://maps.google.com/?q=Gunung+Raung",
-      deskripsi: "Jalur pendakian paling ekstrem di Jawa dengan kaldera terluas.",
-      tanggal: "Pendakian: 25-26 Juli 2026",
-      foto: ["image/raung1.jpg", "image/raung2.jpg", "image/raung3.jpg"]
+      tanggal: "Pendakian : 26 - 27 Juli 2026",
+      foto: [
+              "image/raung1.jpg",
+              "image/raung2.jpg",
+              "image/raung3.jpg"
+            ],
     },
     {
       id: 4,
@@ -53,7 +54,6 @@ const database = {
       lagu: "-",
       audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Lawu",
-      deskripsi: "Gunung sarat nilai sejarah dan spiritual di perbatasan Jatim-Jateng. Terkenal dengan Hargo Dumilah, situs purbakala Candi Cetho, dan Warung Mbok Yem di puncaknya.",
       tanggal: "Pendakian: When Yah",
       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
     },
@@ -67,7 +67,6 @@ const database = {
       lagu: "-",
       audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Welirang",
-      deskripsi: "Kembaran Gunung Arjuno yang aktif dengan kawah belerang memukau. Menyajikan pemandangan unik aktivitas penambang belerang tradisional di sekitar puncaknya.",
       tanggal: "Pendakian: When Yah",
       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
     },
@@ -81,7 +80,6 @@ const database = {
       lagu: "-",
       audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Argopuro",
-      deskripsi: "Pemilik jalur pendakian terpanjang di Pulau Jawa (~40 km). Terkenal dengan keindahan sabana Cikasur yang membentang luas dan mitos Dewi Rengganis.",
       tanggal: "Pendakian: When Yah",
       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
     },
@@ -95,7 +93,6 @@ const database = {
       lagu: "-",
       audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Buthak",
-      deskripsi: "Favorit para pendaki dengan hamparan sabana hijau yang sangat luas di dekat puncaknya. Memiliki jalur yang asri dan relatif ramah untuk penikmat camp santai.",
       tanggal: "Pendakian: 25-26 April 2026",
       foto: ["image/buthak1.jpg", "image/buthak2.jpg", "image/buthak3.jpg"]
     },
@@ -109,9 +106,22 @@ const database = {
       lagu: "-",
       audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Rante",
-      deskripsi: "Salah satu puncak tertinggi di komplek Pegunungan Ijen. Menawarkan panorama lautan awan yang menakjubkan, pemandangan Kawah Ijen dari ketinggian, serta trek tebing terjal yang menantang namun ramah untuk pendakian singkat/tektok.",
-      tanggal: "Pendakian: 28-29 November 2025",
-      foto: ["image/rante1.jpg", "image/rante2.jpg", "image/rante3.jpg"]
+      tanggal: "Pendakian : 11 - 12 Mei 2024",
+      foto: [
+              "image/rante/1rante1.jpg",
+              "image/rante/1rante2.jpg",
+              "image/rante/1rante3.jpg"
+            ],
+      pendakianLanjutan: [
+      {
+      tanggal: "Pendakian : 28 - 29 November 2025",
+      foto: [
+              "image/rante/2rante1.jpg",
+              "image/rante/2rante2.jpg",
+              "image/rante/2rante3.jpg"
+            ]
+      }
+      ]
     },
     {
       id: 9,
@@ -123,9 +133,30 @@ const database = {
       lagu: "-",
       audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Kawah+Ijen",
-      deskripsi: "Gunung api aktif yang mendunia dengan fenomena Blue Fire langka, danau kawah asam terbesar di dunia berwarna pirus, serta lanskap penambangan belerang tradisional yang ikonik.",
-      tanggal: "Pendakian: 26-27 Juni 2026",
-      foto: ["image/ijen1.jpg", "image/ijen2.jpg", "image/ijen3.jpg"]
+      tanggal: "Pendakian : 24 - 25 Juni 2025",
+      foto: [
+              "image/ijen/1ijen1.jpg",
+              "image/ijen/1ijen2.jpg",
+              "image/ijen/1ijen3.jpg"
+            ],
+      pendakianLanjutan: [
+      {
+      tanggal: "Pendakian : 31 Oktober - 1 November 2025",
+      foto: [
+              "image/ijen/2ijen1.jpg",
+              "image/ijen/2ijen2.jpg",
+              "image/ijen/2ijen3.jpg"
+            ]
+      },
+      {
+      tanggal: "Pendakian : 26 - 27 Juni 2026",
+      foto: [
+              "image/ijen/3ijen1.jpg",
+              "image/ijen/3ijen2.jpg",
+              "image/ijen/3ijen3.jpg"
+            ]
+      },
+      ]
     },
     {
       id: 10,
@@ -137,7 +168,6 @@ const database = {
       lagu: "-",
       audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Penanggungan",
-      deskripsi: "Dikenal sebagai miniatur Gunung Semeru karena puncaknya yang berbatu dan berpasir. Sangat kaya akan nilai sejarah dengan puluhan situs candi Hindu-Buddha peninggalan kerajaan purba di sepanjang jalur pendakiannya.",
       tanggal: "Pendakian: 20-21 Desember 2025",
       foto: ["image/penanggungan1.jpg", "image/penanggungan2.jpg", "image/penanggungan3.jpg"]
     },
@@ -151,7 +181,6 @@ const database = {
       lagu: "-",
       audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Gulgulan",
-      deskripsi: "Bukit/gunung eksotis dengan hamparan savana hijau luas yang menawan. Populer sebagai tempat camping dan pendakian singkat dengan panorama megah deretan Pegunungan Argopuro dan Ijen dari kejauhan.",
       tanggal: "Pendakian : 7 - 8 April 2025",
       foto: ["image/gulgulan1.jpg", "image/gulgulan2.jpg", "image/gulgulan3.jpg"]
     },
@@ -165,7 +194,6 @@ const database = {
       lagu: "-",
       audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Tanggus",
-      deskripsi: "Puncak hijau yang asri di kawasan Bondowoso dengan ketinggian 1.251 MDPL. Menawarkan rute pendakian yang relatif ringan, udara sejuk khas perbukitan, serta panorama alam pedesaan dan pegunungan sekitarnya.",
       tanggal: "Pendakian: 14 - 15 Desember 2024",
       foto: ["image/tanggus1.jpg", "image/tanggus2.jpg", "image/tanggus3.jpg"]
     }
@@ -181,7 +209,6 @@ const database = {
       lagu: "-",
       audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Slamet",
-      deskripsi: "Atap tertinggi Jawa Tengah sekaligus raksasa kedua di Pulau Jawa. Terkenal dengan medan pasir yang terjal, jalur pembabat fisik, dan pesona kawah aktifnya yang megah.",
       tanggal: "Pendakian: When Yah",
       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
     },
@@ -195,7 +222,6 @@ const database = {
       lagu: "-",
       audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Sumbing",
-      deskripsi: "Puncak tertinggi kedua di Jateng dengan kaldera raksasa yang menakjubkan. Menawarkan trek menanjak yang rapat dan panorama sabana hijau yang membentang indah.",
       tanggal: "Pendakian: When Yah",
       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
     },
@@ -209,7 +235,6 @@ const database = {
       lagu: "-",
       audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Lawu",
-      deskripsi: "Gunung legendaris di perbatasan Jateng-Jatim yang kaya nilai spiritual dan sejarah. Terkenal dengan Puncak Hargo Dumilah dan pengalaman unik makan di Warung Mbok Yem.",
       tanggal: "Pendakian: When Yah",
       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
     },
@@ -223,7 +248,6 @@ const database = {
       lagu: "-",
       audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Sindoro",
-      deskripsi: "Kembaran Sumbing yang anggun di kawasan Temanggung-Wonosobo. Dikenal dengan kawah aktifnya yang luas, padang edelweis, dan panorama sunrise yang memanjakan mata.",
       tanggal: "Pendakian: When Yah",
       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
     },
@@ -237,7 +261,6 @@ const database = {
       lagu: "-",
       audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Merbabu",
-      deskripsi: "Gunung dengan keindahan sabana terluas di Jawa Tengah.",
       tanggal: "Pendakian: When Yah",
       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
     },
@@ -251,7 +274,6 @@ const database = {
       lagu: "-",
       audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Merapi",
-      deskripsi: "Salah satu gunung berapi paling aktif di dunia yang legendaris. Menawarkan trek pasir dan bebatuan yang menantang, dipadu lanskap kawah Pasarbubar yang sangat magis.",
       tanggal: "Pendakian: When Yah",
       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
     },
@@ -265,7 +287,6 @@ const database = {
       lagu: "-",
       audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Prau",
-      deskripsi: "Favorit pendaki pemula di Dataran Tinggi Dieng. Menyajikan spot golden sunrise terbaik se-Asia Tenggara dengan latar lanskap Gunung Sindoro dan Sumbing yang ikonik.",
       tanggal: "Pendakian: When Yah",
       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
     }
@@ -281,7 +302,6 @@ const database = {
       lagu: "-",
       audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Ciremai",
-      deskripsi: "Atap tertinggi Jawa Barat dengan kawah ganda yang megah. Menawarkan trek menanjak yang konstan tanpa 'bonus' serta menjadi ujian fisik dan mental bagi para pendaki.",
       tanggal: "Pendakian: When Yah",
       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
     },
@@ -295,7 +315,6 @@ const database = {
       lagu: "-",
       audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Pangrango",
-      deskripsi: "Gunung tertinggi kedua di Jabar yang berada di kawasan TN TNGGP. Sangat ikonik dengan keindahan Lembah Mandalawangi yang dipenuhi hamparan bunga edelweis.",
       tanggal: "Pendakian: When Yah",
       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
     },
@@ -309,7 +328,6 @@ const database = {
       lagu: "-",
       audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Gede",
-      deskripsi: "Tetangga dekat Pangrango dan favorit utama pendaki. Memiliki Alun-Alun Suryakencana, kawah aktif yang gagah, serta sumber air panas di sepanjang jalur pendakian.",
       tanggal: "Pendakian: When Yah",
       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
     },
@@ -323,7 +341,6 @@ const database = {
       lagu: "-",
       audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Cikuray",
-      deskripsi: "Gunung berbentuk kerucut simetris sempurna dan merupakan yang tertinggi di Garut. Dikenal dengan trek menanjak tanpa jeda dan pesona lapek / lautan awannya yang indah.",
       tanggal: "Pendakian: When Yah",
       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
     },
@@ -337,7 +354,6 @@ const database = {
       lagu: "-",
       audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Guntur",
-      deskripsi: "Sering dijuluki Semeru-nya Jawa Barat karena medan pasir dan bebatuan terjal menuju puncaknya. Menyajikan jalur terbuka dengan lanskap savana dan pemandangan Kota Garut.",
       tanggal: "Pendakian: When Yah",
       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
     },
@@ -351,7 +367,6 @@ const database = {
       lagu: "-",
       audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Papandayan",
-      deskripsi: "Gunung api aktif dengan fasilitas pendakian sangat lengkap dan ramah pemula. Terkenal dengan lanskap Hutan Mati yang eksotis, kompleks kawah, dan sabana Pondok Saladah.",
       tanggal: "Pendakian: When Yah",
       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
     },
@@ -365,7 +380,6 @@ const database = {
       lagu: "-",
       audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Patuha",
-      deskripsi: "Gunung api yang sangat ikonik di Bandung Selatan. Terkenal dengan keindahan Danau Kawah Putih dan Kawah Saat, serta dikelilingi oleh hamparan perkebunan teh dan hutan pegunungan yang asri.",
       tanggal: "Pendakian: When Yah",
       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
     }
@@ -381,7 +395,6 @@ const database = {
       lagu: "-",
       audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Agung",
-      deskripsi: "Atap tertinggi sekaligus gunung paling suci di Pulau Bali. Menawarkan trek menanjak yang sangat terjal dan ekstrem, dipadu dengan panorama lautan awan yang spektakuler saat matahari terbit.",
       tanggal: "Pendakian: When Yah",
       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
     },
@@ -395,7 +408,6 @@ const database = {
       lagu: "-",
       audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Batukaru",
-      deskripsi: "Puncak tertinggi kedua di Bali yang dikelilingi hutan hujan tropis lebat. Memiliki suasana mistis yang tenang, jalur alami yang rapat, serta Pura Puncak Luhur Batukaru di lerengnya.",
       tanggal: "Pendakian: When Yah",
       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
     },
@@ -409,7 +421,6 @@ const database = {
       lagu: "-",
       audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Abang",
-      deskripsi: "Puncak di pematang kaldera Purba Batur yang menyajikan pemandangan Danau dan Gunung Batur dari ketinggian, serta dikelilingi hutan yang asri.",
       tanggal: "Pendakian: When Yah",
       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
     },
@@ -423,7 +434,6 @@ const database = {
       lagu: "-",
       audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Catur",
-      deskripsi: "Puncak tertinggi keempat di Bali yang terkenal dengan keberadaan Pura Puncak Mangu di puncaknya. Menyajikan trek hutan asri dan pemandangan Danau Beratan serta Danau Buyan dari ketinggian.",
       tanggal: "Pendakian: When Yah",
       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
     },
@@ -437,7 +447,6 @@ const database = {
       lagu: "-",
       audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Sanghyang",
-      deskripsi: "Gunung yang masih sangat alami dan sakral di kawasan Bedugul. Memiliki vegetasi hutan lumut yang rapat, jalur yang terjal, serta suasana hening yang cocok untuk pendaki pencari ketenangan.",
       tanggal: "Pendakian: When Yah",
       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
     },
@@ -451,7 +460,6 @@ const database = {
       lagu: "-",
       audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Adeng",
-      deskripsi: "Gunung api mati di kawasan Bedugul yang kaya akan situs spiritual dan pura. Memiliki rute pendakian yang rindang, kental dengan suasana mistis yang tenang, dan relatif singkat.",
       tanggal: "Pendakian: When Yah",
       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
     },
@@ -465,7 +473,6 @@ const database = {
       lagu: "-",
       audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Batur",
-      deskripsi: "Gunung api aktif paling populer di Bali untuk sunrise trekking. Menyajikan pemandangan kaldera raksasa, Danau Batur yang mempesona, serta kawah aktif yang ramah untuk pendaki dari berbagai tingkat keahlian.",
       tanggal: "Pendakian: When Yah",
       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
     }
@@ -481,7 +488,6 @@ const database = {
       lagu: "-",
       audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Rinjani",
-      deskripsi: "Atap NTB yang menyajikan lanskap luar biasa. Dari hamparan savana Sembalun, tanjakan penyiksaan menuju Puncak 3.726 MDPL, hingga tempat bersantai dan memancing di Danau Segara Anak.",
       tanggal: "Pendakian: When Yah",
       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
     },
@@ -495,13 +501,17 @@ const database = {
       lagu: "-",
       audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Tambora",
-      deskripsi: "Gunung berapi legendaris dengan letusan dahsyat pada tahun 1815 yang menguncang dunia. Memiliki kaldera raksasa seluas 7 km dengan kedalaman 1,1 km, dipadu hamparan padang savana Doro Ncanga yang memukau.",
       tanggal: "Pendakian: When Yah",
       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
     }
   ]
 };
 
+
+
+
+//
+//
 // Global Audio Manager
 let currentAudio = null;
 let currentPlayingId = null;
@@ -521,6 +531,12 @@ const gmapsIcon = `
   </svg>
 `;
 
+const chevronIcon = `
+  <svg class="chevron-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="6 9 12 15 18 9"></polyline>
+  </svg>
+`;
+
 // DOM Elements
 const pageWilayah = document.getElementById("page-wilayah");
 const pageGunung = document.getElementById("page-gunung");
@@ -535,7 +551,7 @@ const searchGunungInput = document.getElementById("search-gunung");
 // --- FUNGSI MODAL IMAGE PREVIEW ---
 function openImageModal(event, src) {
   if (event) {
-    event.stopPropagation(); // Mencegah accordion/kartu terlipat kembali
+    event.stopPropagation();
   }
   
   const modal = document.getElementById('image-modal');
@@ -554,7 +570,7 @@ function closeImageModal() {
   }
 }
 
-// Helper Format Menit & Detik (e.g. 125 -> 2:05)
+// Helper Format Menit & Detik
 function formatTime(seconds) {
   if (isNaN(seconds) || seconds <= 0) return "0:00";
   const mins = Math.floor(seconds / 60);
@@ -562,7 +578,7 @@ function formatTime(seconds) {
   return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
 }
 
-// Helper untuk mendapatkan filter pencarian gunung saat ini
+// Helper filter pencarian gunung
 function getGunungFilter() {
   return searchGunungInput ? searchGunungInput.value : "";
 }
@@ -573,7 +589,6 @@ function toggleAudio(event, id, audioSrc) {
 
   if (!audioSrc || audioSrc === "-") return;
 
-  // Jika lagu yang sama diklik (Toggle Play / Pause)
   if (currentPlayingId === id && currentAudio) {
     if (currentAudio.paused) {
       currentAudio.play();
@@ -584,13 +599,11 @@ function toggleAudio(event, id, audioSrc) {
     return;
   }
 
-  // Hentikan lagu lain yang sedang diputar
   if (currentAudio) {
     currentAudio.pause();
     currentAudio = null;
   }
 
-  // Mainkan audio baru
   currentAudio = new Audio(audioSrc);
   currentPlayingId = id;
 
@@ -598,10 +611,8 @@ function toggleAudio(event, id, audioSrc) {
     console.warn("File MP3 belum ditemukan atau diblokir browser:", err);
   });
 
-  // Event handler untuk update detik & slider secara real-time
   currentAudio.ontimeupdate = () => updatePlayerUI(id);
 
-  // Event handler saat durasi lagu selesai
   currentAudio.onended = () => {
     currentPlayingId = null;
     currentAudio = null;
@@ -611,7 +622,7 @@ function toggleAudio(event, id, audioSrc) {
   renderGunung(getGunungFilter());
 }
 
-// Update Tampilan Player (Detik & Range Slider) secara Real-time
+// Update Tampilan Player Real-time
 function updatePlayerUI(id) {
   const card = document.querySelector(`.purple-player-card[data-id="${id}"]`);
   if (!card || !currentAudio) return;
@@ -631,15 +642,13 @@ function updatePlayerUI(id) {
     progressSlider.max = dur || 100;
     progressSlider.value = cur;
     const pct = dur ? (cur / dur) * 100 : 0;
-    
-    // Garis berjalan putih, sisa garis transparan/gelap
-    progressSlider.style.background = `linear-gradient(to right, #ffffff ${pct}%, rgba(255, 255, 255, 0.2) ${pct}%)`;
+    progressSlider.style.background = `linear-gradient(to right, #d2a8ff ${pct}%, rgba(255, 255, 255, 0.15) ${pct}%)`;
   }
 
   if (playBtn) playBtn.textContent = currentAudio.paused ? '▶' : '⏸';
 }
 
-// Fungsi Skip/Seek Lagu Saat Slider Ditarik/Diklik
+// Seek Audio
 function seekAudio(event) {
   event.stopPropagation();
   if (currentAudio) {
@@ -724,7 +733,7 @@ function renderGunung(filter = "") {
       ? `<div class="status-badge done">✔</div>`
       : `<div class="status-badge pending">✕</div>`;
 
-    // Widget Pemutar Musik Ungu Ringkas
+    // Widget Pemutar Musik Ungu
     const songBadgeHTML = (isExpanded && item.lagu && item.lagu !== "-") ? `
       <div class="purple-player-card ${isPlaying ? 'playing' : ''}" data-id="${item.id}">
         <div class="player-top-row">
@@ -754,25 +763,47 @@ function renderGunung(filter = "") {
       </div>
     ` : "";
 
-    // Detail Galeri & Deskripsi
-    const detailHTML = isExpanded ? `
-      <div class="gunung-detail">
-        <div class="gallery">
-          ${item.foto.map(img => `<img src="${img}" alt="${item.nama}" onclick="openImageModal(event, '${img}')">`).join('')}
-        </div>
-        <div class="desc-box">
-          <div class="desc-card">
-            <p class="description">${item.deskripsi}</p>
+    // Detail Foto & Tanggal
+    let detailHTML = "";
+    if (isExpanded) {
+      // 1. Kolom Otomatis Pertama (Gambar & Tanggal Bawaan)
+      const fotoUtama = item.foto || [];
+      detailHTML += `
+        <div class="photo-section-card" style="margin-bottom: 12px;">
+          <div class="photo-grid">
+            <img src="${fotoUtama[0] || 'image/kosong.jpg'}" class="photo-item" onclick="openImageModal(event, '${fotoUtama[0] || 'image/kosong.jpg'}')" alt="Foto 1">
+            <img src="${fotoUtama[1] || 'image/kosong.jpg'}" class="photo-item" onclick="openImageModal(event, '${fotoUtama[1] || 'image/kosong.jpg'}')" alt="Foto 2">
+            <img src="${fotoUtama[2] || 'image/kosong.jpg'}" class="photo-item" onclick="openImageModal(event, '${fotoUtama[2] || 'image/kosong.jpg'}')" alt="Foto 3">
           </div>
-
-          <div class="date-badge">
-            <span>📅</span> ${item.tanggal}
+          
+          <div class="pendakian-badge">
+            📅 ${item.tanggal || 'Pendakian : When Yah'}
           </div>
         </div>
-      </div>
-    ` : "";
+      `;
 
-    // URL Google Maps Fallback yang valid
+      // 2. Kolom Ke-2 dan Seterusnya (Hanya Muncul Jika Ada pendakianLanjutan)
+      if (item.pendakianLanjutan && item.pendakianLanjutan.length > 0) {
+        detailHTML += item.pendakianLanjutan.map(p => {
+          const fotoTambahan = p.foto || [];
+          return `
+            <div class="photo-section-card" style="margin-bottom: 12px;">
+              <div class="photo-grid">
+                <img src="${fotoTambahan[0] || 'image/kosong.jpg'}" class="photo-item" onclick="openImageModal(event, '${fotoTambahan[0] || 'image/kosong.jpg'}')" alt="Foto Lanjutan 1">
+                <img src="${fotoTambahan[1] || 'image/kosong.jpg'}" class="photo-item" onclick="openImageModal(event, '${fotoTambahan[1] || 'image/kosong.jpg'}')" alt="Foto Lanjutan 2">
+                <img src="${fotoTambahan[2] || 'image/kosong.jpg'}" class="photo-item" onclick="openImageModal(event, '${fotoTambahan[2] || 'image/kosong.jpg'}')" alt="Foto Lanjutan 3">
+              </div>
+              
+              <div class="pendakian-badge">
+                📅 ${p.tanggal || 'Pendakian : When Yah'}
+              </div>
+            </div>
+          `;
+        }).join('');
+      }
+    }
+
+    // URL Google Maps Fallback
     const fallbackMapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(item.nama)}`;
     const finalMapUrl = (item.mapUrl && item.mapUrl !== "-") ? item.mapUrl : fallbackMapUrl;
 
@@ -801,18 +832,15 @@ function renderGunung(filter = "") {
             </a>
             <span class="location-hint">ketuk untuk melihat info lokasi</span>
           </div>
-
-          ${songBadgeHTML}
         </div>
-        
+
         <div class="gunung-actions-right">
           ${statusMark}
-          <svg class="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="6 9 12 15 18 9"></polyline>
-          </svg>
+          ${chevronIcon}
         </div>
       </div>
-      
+
+      ${songBadgeHTML}
       ${detailHTML}
     `;
 
