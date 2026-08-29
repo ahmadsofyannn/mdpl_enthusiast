@@ -34,8 +34,8 @@ const database = {
       mdpl: "3.332 MDPL",
       status: "done",
       lokasi: "Bondowoso",
-      lagu: ".",
-      audioSrc: "-",
+      lagu: "Alex Crichton - Merry Christmas, i miss you",
+      audioSrc: "audio/Alex Crichton - Merry Christmas, i miss you.mp3",
       mapUrl: "https://maps.google.com/?q=Gunung+Raung",
       tanggal: "Pendakian : 26 - 27 Juli 2026",
       foto: [
@@ -130,8 +130,8 @@ const database = {
       mdpl: "2.386 MDPL",
       status: "done",
       lokasi: "Banyuwangi",
-      lagu: ".",
-      audioSrc: "-",
+      lagu: "Yovie & Nuno - Manusia Biasa",
+      audioSrc: "audio/Yovie & Nuno - Manusia Biasa.mp3",
       mapUrl: "https://maps.google.com/?q=Kawah+Ijen",
       tanggal: "Pendakian : 24 - 25 Juni 2025",
       foto: [
