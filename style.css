@@ -1,6 +1,4 @@
-/* ========================================================= */
-/* 1. IMPORT FONT & BASE RESET                               */
-/* ========================================================= */
+
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&display=swap');
 
 * {
@@ -83,13 +81,14 @@ body {
 /* ========================================================= */
 .btn-back {
   background-color: #161b22;
-  color: #c9d1d9;
+  color: #ffffff;
   border: 1px solid #30363d;
   padding: 8px 14px;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 0.85rem;
-  font-weight: 600;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding-bottom: 10px;
   align-self: flex-start;
   transition: background-color 0.2s ease, color 0.2s ease;
   user-select: none;
@@ -121,7 +120,7 @@ body {
 .card-list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap : 15px;
 }
 
 .card {
@@ -132,6 +131,7 @@ body {
   cursor: pointer;
   transition: background-color 0.2s ease, transform 0.2s ease;
   width: 100%;
+  
   user-select: none;
 }
 
@@ -191,11 +191,11 @@ body {
   color: #388bfd;
   border: 1px solid rgba(56, 138, 253, 0.3);
   font-weight: 700;
-  font-size: 1.09rem;
+  font-size: 2rem;
   padding: 3px 6px;
   border-radius: 5px;
   white-space: nowrap;
-  line-height: 1;
+  
 }
 
 .badge-title {
@@ -220,14 +220,18 @@ body {
   display: inline-flex;
   align-items: center;
   background-color: transparent;
-  color: #bbb9b9;
+  color: #ffffff;
   border: 1px solid #30363d;
-  font-size: 0.95rem;
-  font-weight: 800;
-  padding: 2px 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 6px;
+  padding-right: 6px;
   border-radius: 6px;
   white-space: nowrap;
-  line-height: 1;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
 }
 
 /* Action Status Kanan */
@@ -245,25 +249,13 @@ body {
 .status-badge {
   width: 22px;
   height: 22px;
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.65rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 
-.status-badge.pending {
-  background-color: #2d1517;
-  color: #f85149;
-  border: 1px solid rgba(248, 81, 73, 0.3);
-}
-
-.status-badge.done {
-  background-color: #13231b;
-  color: #2ea043;
-  border: 1px solid rgba(46, 160, 67, 0.3);
-}
 
 /* Chevron Icon Animation */
 .chevron-icon {
@@ -367,7 +359,7 @@ body {
 .pendakian-badge {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: px;
   background-color: #161b22;
   border: 1px solid #30363d;
   color: #ffffff;
@@ -411,6 +403,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 2px;
   flex-shrink: 0;
   margin-right: 4px;
   transform: translateY(1.2px);
@@ -420,160 +413,22 @@ body {
   display: flex;
   align-items: center;
   font-size: 0.78rem;
-  font-weight: 550;
-  color: #388bfd;
-}
-
-.location-hint {
-  font-size: 11px;
-  color: #ffffff;
-  white-space: nowrap;
-  pointer-events: none;
-}
-
-/* Kapsul Lagu & Player */
-.purple-player-card {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  background-color: rgba(163, 113, 247, 0.12);
-  border: 1px solid rgba(163, 113, 247, 0.4);
-  border-radius: 10px;
-  padding: 6px 10px;
-  width: 100%;
-  max-width: 375px;
-  margin-top: 10px;
-  margin-bottom: 11px;
-  transition: all 0.2s ease;
-}
-
-.purple-player-card.playing {
-  background-color: rgba(163, 113, 247, 0.22);
-  border-color: #a371f7;
-}
-
-.player-song-text {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.8rem;
   font-weight: 700;
-  color: #ffffff;
-  display: block;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.player-progress-container {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  height: 10px;
-}
-
-.player-progress-slider {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 100%;
-  height: 6px;
-  border-radius: 4px;
-  background: rgba(255, 255, 255, 0.2);
-  outline: none;
-  cursor: pointer;
-}
-
-.player-progress-slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: #ffffff;
-  cursor: pointer;
-}
-
-.player-progress-slider::-moz-range-thumb {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: #ffffff;
-  cursor: pointer;
-  border: none;
-}
-
-.player-bottom-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.player-time {
-  font-size: 0.65rem;
-  color: #ffffff;
-  font-family: 'JetBrains Mono', monospace;
-}
-
-.player-controls {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.btn-ctrl {
-  background: none;
-  border: none;
-  color: #d2a8ff;
-  font-size: 0.7rem;
-  cursor: pointer;
-  padding: 0;
-  line-height: 1;
-  transition: transform 0.1s ease, color 0.2s ease;
-}
-
-.btn-play {
-  font-size: 13px;
-  width: 28px;
-  height: 28px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  background: transparent;
-  color: #ffffff;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.btn-play:hover {
-  transform: scale(1.15);
+  color: #388bfd;
+  padding-bottom: 2.5px;
 }
 
 /* ========================================================= */
 /* 7. FOOTER                                                 */
 /* ========================================================= */
-.time-card {
-  text-align: center;
-  padding: 14px 16px;
-  cursor: default;
-  margin-top: 0;
-  background-color: #161b22;
-  border: 1px solid #21262d;
-  border-radius: 12px;
-}
-
-.time-stamp {
-  text-align: center;
-  color: #ffffff;
-  font-size: 1rem;
-  font-weight: 750;
-}
 
 .footer-subtitle {
   text-align: center;
   color: #ffffff;
-  font-size: 1.07rem;
-  margin-top: -6px;
+  font-size: 1.rem;
+  margin-top: 2px;
   margin-bottom: 15px;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.5px;
 }
 
@@ -635,7 +490,7 @@ body {
 
 /* ========================================================= */
 /* 9. RESPONSIVE DESIGN                                      */
-/* ========================================================= */
+
 @media screen and (max-width: 720px) {
   body {
     padding: 20px 12px;

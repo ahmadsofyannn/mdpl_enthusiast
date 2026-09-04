@@ -8,8 +8,8 @@ const database = {
       mdpl: "3.676 MDPL",
       status: "pending",
       lokasi: "Lumajang",
-      lagu: ".",
-      audioSrc: "",
+      // lagu: ".",
+      // audioSrc: "",
       mapUrl: "https://maps.google.com/?q=Gunung+Semeru",
       tanggal: "Pendakian : When Yah",
       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
@@ -21,8 +21,8 @@ const database = {
       mdpl: "3.339 MDPL",
       status: "pending",
       lokasi: "Malang",
-      lagu: ".",
-      audioSrc: "-",
+      // lagu: ".",
+      // audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Arjuno",
       tanggal: "Pendakian : When Yah",
       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
@@ -34,8 +34,8 @@ const database = {
       mdpl: "3.332 MDPL",
       status: "done",
       lokasi: "Bondowoso",
-      lagu: "Alex Crichton - Merry Christmas, i miss you",
-      audioSrc: "audio/Alex Crichton - Merry Christmas, i miss you.mp3",
+      // lagu: "Alex Crichton - Merry Christmas, i miss you",
+      // audioSrc: "audio/Alex Crichton - Merry Christmas, i miss you.mp3",
       mapUrl: "https://maps.google.com/?q=Gunung+Raung",
       tanggal: "Pendakian : 26 - 27 Juli 2026",
       foto: [
@@ -51,8 +51,8 @@ const database = {
       mdpl: "3.265 MDPL",
       status: "pending",
       lokasi: "Magetan",
-      lagu: ".",
-      audioSrc: "-",
+      // lagu: ".",
+      // audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Lawu",
       tanggal: "Pendakian: When Yah",
       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
@@ -64,8 +64,8 @@ const database = {
       mdpl: "3.156 MDPL",
       status: "pending",
       lokasi: "Mojokerto",
-      lagu: ".",
-      audioSrc: "-",
+      // lagu: ".",
+      // audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Welirang",
       tanggal: "Pendakian: When Yah",
       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
@@ -77,8 +77,8 @@ const database = {
       mdpl: "3.088 MDPL",
       status: "pending",
       lokasi: "Probolinggo",
-      lagu: ".",
-      audioSrc: "-",
+      // lagu: ".",
+      // audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Argopuro",
       tanggal: "Pendakian: When Yah",
       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
@@ -90,7 +90,8 @@ const database = {
       mdpl: "2.868 MDPL",
       status: "done",
       lokasi: "Malang",
-      lagu: ".",
+      // lagu: ".",
+      // audioSrc: "-",
       audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Buthak",
       tanggal: "Pendakian: 25-26 April 2026",
@@ -103,8 +104,8 @@ const database = {
       mdpl: "2.601 MDPL",
       status: "done",
       lokasi: "Banyuwangi",
-      lagu: ".",
-      audioSrc: "-",
+      // lagu: ".",
+      // audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Rante",
       tanggal: "Pendakian : 11 - 12 Mei 2024",
       foto: [
@@ -130,8 +131,8 @@ const database = {
       mdpl: "2.386 MDPL",
       status: "done",
       lokasi: "Banyuwangi",
-      lagu: "Yovie & Nuno - Manusia Biasa",
-      audioSrc: "audio/Yovie & Nuno - Manusia Biasa.mp3",
+      // lagu: "Yovie & Nuno - Manusia Biasa",
+      // audioSrc: "audio/Yovie & Nuno - Manusia Biasa.mp3",
       mapUrl: "https://maps.google.com/?q=Kawah+Ijen",
       tanggal: "Pendakian : 24 - 25 Juni 2025",
       foto: [
@@ -165,8 +166,8 @@ const database = {
       mdpl: "1.653 MDPL",
       status: "done",
       lokasi: "Mojokerto",
-      lagu: ".",
-      audioSrc: "-",
+      // lagu: ".",
+      // audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Penanggungan",
       tanggal: "Pendakian: 20-21 Desember 2025",
       foto: ["image/penanggungan1.jpg", "image/penanggungan2.jpg", "image/penanggungan3.jpg"]
@@ -178,8 +179,8 @@ const database = {
       mdpl: "1.406 MDPL",
       status: "done",
       lokasi: "Bondowoso",
-      lagu: ".",
-      audioSrc: "-",
+      // lagu: ".",
+      // audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Gulgulan",
       tanggal: "Pendakian : 7 - 8 April 2025",
       foto: ["image/gulgulan1.jpg", "image/gulgulan2.jpg", "image/gulgulan3.jpg"]
@@ -191,320 +192,320 @@ const database = {
       mdpl: "1.251 MDPL",
       status: "done",
       lokasi: "Bondowoso",
-      lagu: ".",
-      audioSrc: "-",
+      // lagu: ".",
+      // audioSrc: "-",
       mapUrl: "https://maps.google.com/?q=Gunung+Tanggus",
       tanggal: "Pendakian: 14 - 15 Desember 2024",
       foto: ["image/tanggus1.jpg", "image/tanggus2.jpg", "image/tanggus3.jpg"]
     }
   ],
-  "JAWA TENGAH": [
-    {
-      id: 1,
-      rank: "#1",
-      nama: "MT. SLAMET",
-      mdpl: "3.428 MDPL",
-      status: "pending",
-      lokasi: "Pemalang",
-      lagu: ".",
-      audioSrc: "-",
-      mapUrl: "https://maps.google.com/?q=Gunung+Slamet",
-      tanggal: "Pendakian: When Yah",
-      foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
-    },
-    {
-      id: 2,
-      rank: "#2",
-      nama: "MT. SUMBING",
-      mdpl: "3.371 MDPL",
-      status: "pending",
-      lokasi: "Temanggung",
-      lagu: ".",
-      audioSrc: "-",
-      mapUrl: "https://maps.google.com/?q=Gunung+Sumbing",
-      tanggal: "Pendakian: When Yah",
-      foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
-    },
-    {
-      id: 3,
-      rank: "#3",
-      nama: "MT. LAWU",
-      mdpl: "3.265 MDPL",
-      status: "pending",
-      lokasi: "Karanganyar",
-      lagu: ".",
-      audioSrc: "-",
-      mapUrl: "https://maps.google.com/?q=Gunung+Lawu",
-      tanggal: "Pendakian: When Yah",
-      foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
-    },
-    {
-      id: 4,
-      rank: "#4",
-      nama: "MT. SINDORO",
-      mdpl: "3.153 MDPL",
-      status: "pending",
-      lokasi: "Wonosobo",
-      lagu: ".",
-      audioSrc: "-",
-      mapUrl: "https://maps.google.com/?q=Gunung+Sindoro",
-      tanggal: "Pendakian: When Yah",
-      foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
-    },
-    {
-      id: 5,
-      rank: "#5",
-      nama: "MT. MERBABU",
-      mdpl: "3.145 MDPL",
-      status: "pending",
-      lokasi: "Boyolali",
-      lagu: ".",
-      audioSrc: "-",
-      mapUrl: "https://maps.google.com/?q=Gunung+Merbabu",
-      tanggal: "Pendakian: When Yah",
-      foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
-    },
-    {
-      id: 6,
-      rank: "#6",
-      nama: "MT. MERAPI",
-      mdpl: "2.930 MDPL",
-      status: "pending",
-      lokasi: "Boyolali",
-      lagu: ".",
-      audioSrc: "-",
-      mapUrl: "https://maps.google.com/?q=Gunung+Merapi",
-      tanggal: "Pendakian: When Yah",
-      foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
-    },
-    {
-      id: 7,
-      rank: "#7",
-      nama: "MT. PRAU",
-      mdpl: "2.565 MDPL",
-      status: "pending",
-      lokasi: "Dieng",
-      lagu: ".",
-      audioSrc: "-",
-      mapUrl: "https://maps.google.com/?q=Gunung+Prau",
-      tanggal: "Pendakian: When Yah",
-      foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
-    }
-  ],
-  "JAWA BARAT": [
-    {
-      id: 1,
-      rank: "#1",
-      nama: "MT. CIREMAI",
-      mdpl: "3.078 MDPL",
-      status: "pending",
-      lokasi: "Kuningan",
-      lagu: ".",
-      audioSrc: "-",
-      mapUrl: "https://maps.google.com/?q=Gunung+Ciremai",
-      tanggal: "Pendakian: When Yah",
-      foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
-    },
-    {
-      id: 2,
-      rank: "#2",
-      nama: "MT. PANGRANGO",
-      mdpl: "3.019 MDPL",
-      status: "pending",
-      lokasi: "Bogor",
-      lagu: ".",
-      audioSrc: "-",
-      mapUrl: "https://maps.google.com/?q=Gunung+Pangrango",
-      tanggal: "Pendakian: When Yah",
-      foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
-    },
-    {
-      id: 3,
-      rank: "#3",
-      nama: "MT. GEDE",
-      mdpl: "2.958 MDPL",
-      status: "pending",
-      lokasi: "Bogor",
-      lagu: ".",
-      audioSrc: "-",
-      mapUrl: "https://maps.google.com/?q=Gunung+Gede",
-      tanggal: "Pendakian: When Yah",
-      foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
-    },
-    {
-      id: 4,
-      rank: "#4",
-      nama: "MT. CIKURAY",
-      mdpl: "2.818 MDPL",
-      status: "pending",
-      lokasi: "Garut",
-      lagu: ".",
-      audioSrc: "-",
-      mapUrl: "https://maps.google.com/?q=Gunung+Cikuray",
-      tanggal: "Pendakian: When Yah",
-      foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
-    },
-    {
-      id: 5,
-      rank: "#5",
-      nama: "MT. GUNTUR",
-      mdpl: "2.249 MDPL",
-      status: "pending",
-      lokasi: "Garut",
-      lagu: ".",
-      audioSrc: "-",
-      mapUrl: "https://maps.google.com/?q=Gunung+Guntur",
-      tanggal: "Pendakian: When Yah",
-      foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
-    },
-    {
-      id: 6,
-      rank: "#6",
-      nama: "MT. PAPANDAYAN",
-      mdpl: "2.665 MDPL",
-      status: "pending",
-      lokasi: "Garut",
-      lagu: ".",
-      audioSrc: "-",
-      mapUrl: "https://maps.google.com/?q=Gunung+Papandayan",
-      tanggal: "Pendakian: When Yah",
-      foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
-    },
-    {
-      id: 7,
-      rank: "#7",
-      nama: "MT. PATUHA",
-      mdpl: "2.434 MDPL",
-      status: "pending",
-      lokasi: "Bandung",
-      lagu: ".",
-      audioSrc: "-",
-      mapUrl: "https://maps.google.com/?q=Gunung+Patuha",
-      tanggal: "Pendakian: When Yah",
-      foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
-    }
-  ],
-  "BALI": [
-    {
-      id: 1,
-      rank: "#1",
-      nama: "MT. AGUNG",
-      mdpl: "3.142 MDPL",
-      status: "pending",
-      lokasi: "Karangasem",
-      lagu: ".",
-      audioSrc: "-",
-      mapUrl: "https://maps.google.com/?q=Gunung+Agung",
-      tanggal: "Pendakian: When Yah",
-      foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
-    },
-    {
-      id: 2,
-      rank: "#2",
-      nama: "MT. BATUKARU",
-      mdpl: "2.276 MDPL",
-      status: "pending",
-      lokasi: "Tabanan",
-      lagu: ".",
-      audioSrc: "-",
-      mapUrl: "https://maps.google.com/?q=Gunung+Batukaru",
-      tanggal: "Pendakian: When Yah",
-      foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
-    },
-    {
-      id: 3,
-      rank: "#3",
-      nama: "MT. ABANG",
-      mdpl: "2.151 MDPL",
-      status: "pending",
-      lokasi: "Bangli",
-      lagu: ".",
-      audioSrc: "-",
-      mapUrl: "https://maps.google.com/?q=Gunung+Abang",
-      tanggal: "Pendakian: When Yah",
-      foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
-    },
-    {
-      id: 4,
-      rank: "#4",
-      nama: "MT. CATUR",
-      mdpl: "2.096 MDPL",
-      status: "pending",
-      lokasi: "Buleleng",
-      lagu: ".",
-      audioSrc: "-",
-      mapUrl: "https://maps.google.com/?q=Gunung+Catur",
-      tanggal: "Pendakian: When Yah",
-      foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
-    },
-    {
-      id: 5,
-      rank: "#5",
-      nama: "MT. SANGHYANG",
-      mdpl: "2.087 MDPL",
-      status: "pending",
-      lokasi: "Tabanan",
-      lagu: ".",
-      audioSrc: "-",
-      mapUrl: "https://maps.google.com/?q=Gunung+Sanghyang",
-      tanggal: "Pendakian: When Yah",
-      foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
-    },
-    {
-      id: 6,
-      rank: "#6",
-      nama: "MT. ADENG",
-      mdpl: "1.826 MDPL",
-      status: "pending",
-      lokasi: "Tabanan",
-      lagu: ".",
-      audioSrc: "-",
-      mapUrl: "https://maps.google.com/?q=Gunung+Adeng",
-      tanggal: "Pendakian: When Yah",
-      foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
-    },
-    {
-      id: 7,
-      rank: "#7",
-      nama: "MT. BATUR",
-      mdpl: "1.717 MDPL",
-      status: "pending",
-      lokasi: "Kintamani",
-      lagu: ".",
-      audioSrc: "-",
-      mapUrl: "https://maps.google.com/?q=Gunung+Batur",
-      tanggal: "Pendakian: When Yah",
-      foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
-    }
-  ],
-  "NTB": [
-    {
-      id: 1,
-      rank: "#1",
-      nama: "MT. RINJANI",
-      mdpl: "3.726 MDPL",
-      status: "pending",
-      lokasi: "Lombok Timur",
-      lagu: ".",
-      audioSrc: "-",
-      mapUrl: "https://maps.google.com/?q=Gunung+Rinjani",
-      tanggal: "Pendakian: When Yah",
-      foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
-    },
-    {
-      id: 2,
-      rank: "#2",
-      nama: "MT. TAMBORA",
-      mdpl: "2.851 MDPL",
-      status: "pending",
-      lokasi: "Sumbawa",
-      lagu: ".",
-      audioSrc: "-",
-      mapUrl: "https://maps.google.com/?q=Gunung+Tambora",
-      tanggal: "Pendakian: When Yah",
-      foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
-    }
-  ]
+//   "JAWA TENGAH": [
+//     {
+//       id: 1,
+//       rank: "#1",
+//       nama: "MT. SLAMET",
+//       mdpl: "3.428 MDPL",
+//       status: "pending",
+//       lokasi: "Pemalang",
+//       // lagu: ".",
+//       // audioSrc: "-",
+//       mapUrl: "https://maps.google.com/?q=Gunung+Slamet",
+//       tanggal: "Pendakian: When Yah",
+//       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
+//     },
+//     {
+//       id: 2,
+//       rank: "#2",
+//       nama: "MT. SUMBING",
+//       mdpl: "3.371 MDPL",
+//       status: "pending",
+//       lokasi: "Temanggung",
+//       // lagu: ".",
+//       // audioSrc: "-",
+//       mapUrl: "https://maps.google.com/?q=Gunung+Sumbing",
+//       tanggal: "Pendakian: When Yah",
+//       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
+//     },
+//     {
+//       id: 3,
+//       rank: "#3",
+//       nama: "MT. LAWU",
+//       mdpl: "3.265 MDPL",
+//       status: "pending",
+//       lokasi: "Karanganyar",
+//       // lagu: ".",
+//       // audioSrc: "-",
+//       mapUrl: "https://maps.google.com/?q=Gunung+Lawu",
+//       tanggal: "Pendakian: When Yah",
+//       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
+//     },
+//     {
+//       id: 4,
+//       rank: "#4",
+//       nama: "MT. SINDORO",
+//       mdpl: "3.153 MDPL",
+//       status: "pending",
+//       lokasi: "Wonosobo",
+//       // lagu: ".",
+//       // audioSrc: "-",
+//       mapUrl: "https://maps.google.com/?q=Gunung+Sindoro",
+//       tanggal: "Pendakian: When Yah",
+//       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
+//     },
+//     {
+//       id: 5,
+//       rank: "#5",
+//       nama: "MT. MERBABU",
+//       mdpl: "3.145 MDPL",
+//       status: "pending",
+//       lokasi: "Boyolali",
+//       // lagu: ".",
+//       // audioSrc: "-",
+//       mapUrl: "https://maps.google.com/?q=Gunung+Merbabu",
+//       tanggal: "Pendakian: When Yah",
+//       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
+//     },
+//     {
+//       id: 6,
+//       rank: "#6",
+//       nama: "MT. MERAPI",
+//       mdpl: "2.930 MDPL",
+//       status: "pending",
+//       lokasi: "Boyolali",
+//       // lagu: ".",
+//       // audioSrc: "-",
+//       mapUrl: "https://maps.google.com/?q=Gunung+Merapi",
+//       tanggal: "Pendakian: When Yah",
+//       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
+//     },
+//     {
+//       id: 7,
+//       rank: "#7",
+//       nama: "MT. PRAU",
+//       mdpl: "2.565 MDPL",
+//       status: "pending",
+//       lokasi: "Dieng",
+//       // lagu: ".",
+//       // audioSrc: "-",
+//       mapUrl: "https://maps.google.com/?q=Gunung+Prau",
+//       tanggal: "Pendakian: When Yah",
+//       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
+//     }
+//   ],
+//   "JAWA BARAT": [
+//     {
+//       id: 1,
+//       rank: "#1",
+//       nama: "MT. CIREMAI",
+//       mdpl: "3.078 MDPL",
+//       status: "pending",
+//       lokasi: "Kuningan",
+//       // lagu: ".",
+//       // audioSrc: "-",
+//       mapUrl: "https://maps.google.com/?q=Gunung+Ciremai",
+//       tanggal: "Pendakian: When Yah",
+//       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
+//     },
+//     {
+//       id: 2,
+//       rank: "#2",
+//       nama: "MT. PANGRANGO",
+//       mdpl: "3.019 MDPL",
+//       status: "pending",
+//       lokasi: "Bogor",
+//       // lagu: ".",
+//       // audioSrc: "-",
+//       mapUrl: "https://maps.google.com/?q=Gunung+Pangrango",
+//       tanggal: "Pendakian: When Yah",
+//       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
+//     },
+//     {
+//       id: 3,
+//       rank: "#3",
+//       nama: "MT. GEDE",
+//       mdpl: "2.958 MDPL",
+//       status: "pending",
+//       lokasi: "Bogor",
+//       // lagu: ".",
+//       // audioSrc: "-",
+//       mapUrl: "https://maps.google.com/?q=Gunung+Gede",
+//       tanggal: "Pendakian: When Yah",
+//       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
+//     },
+//     {
+//       id: 4,
+//       rank: "#4",
+//       nama: "MT. CIKURAY",
+//       mdpl: "2.818 MDPL",
+//       status: "pending",
+//       lokasi: "Garut",
+//       // lagu: ".",
+//       // audioSrc: "-",
+//       mapUrl: "https://maps.google.com/?q=Gunung+Cikuray",
+//       tanggal: "Pendakian: When Yah",
+//       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
+//     },
+//     {
+//       id: 5,
+//       rank: "#5",
+//       nama: "MT. GUNTUR",
+//       mdpl: "2.249 MDPL",
+//       status: "pending",
+//       lokasi: "Garut",
+//       // lagu: ".",
+//       // audioSrc: "-",
+//       mapUrl: "https://maps.google.com/?q=Gunung+Guntur",
+//       tanggal: "Pendakian: When Yah",
+//       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
+//     },
+//     {
+//       id: 6,
+//       rank: "#6",
+//       nama: "MT. PAPANDAYAN",
+//       mdpl: "2.665 MDPL",
+//       status: "pending",
+//       lokasi: "Garut",
+//       // lagu: ".",
+//       // audioSrc: "-",
+//       mapUrl: "https://maps.google.com/?q=Gunung+Papandayan",
+//       tanggal: "Pendakian: When Yah",
+//       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
+//     },
+//     {
+//       id: 7,
+//       rank: "#7",
+//       nama: "MT. PATUHA",
+//       mdpl: "2.434 MDPL",
+//       status: "pending",
+//       lokasi: "Bandung",
+//       // lagu: ".",
+//       // audioSrc: "-",
+//       mapUrl: "https://maps.google.com/?q=Gunung+Patuha",
+//       tanggal: "Pendakian: When Yah",
+//       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
+//     }
+//   ],
+//   "BALI": [
+//     {
+//       id: 1,
+//       rank: "#1",
+//       nama: "MT. AGUNG",
+//       mdpl: "3.142 MDPL",
+//       status: "pending",
+//       lokasi: "Karangasem",
+//       // lagu: ".",
+//       // audioSrc: "-",
+//       mapUrl: "https://maps.google.com/?q=Gunung+Agung",
+//       tanggal: "Pendakian: When Yah",
+//       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
+//     },
+//     {
+//       id: 2,
+//       rank: "#2",
+//       nama: "MT. BATUKARU",
+//       mdpl: "2.276 MDPL",
+//       status: "pending",
+//       lokasi: "Tabanan",
+//       // lagu: ".",
+//       // audioSrc: "-",
+//       mapUrl: "https://maps.google.com/?q=Gunung+Batukaru",
+//       tanggal: "Pendakian: When Yah",
+//       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
+//     },
+//     {
+//       id: 3,
+//       rank: "#3",
+//       nama: "MT. ABANG",
+//       mdpl: "2.151 MDPL",
+//       status: "pending",
+//       lokasi: "Bangli",
+//       // lagu: ".",
+//       // audioSrc: "-",
+//       mapUrl: "https://maps.google.com/?q=Gunung+Abang",
+//       tanggal: "Pendakian: When Yah",
+//       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
+//     },
+//     {
+//       id: 4,
+//       rank: "#4",
+//       nama: "MT. CATUR",
+//       mdpl: "2.096 MDPL",
+//       status: "pending",
+//       lokasi: "Buleleng",
+//       // lagu: ".",
+//       // audioSrc: "-",
+//       mapUrl: "https://maps.google.com/?q=Gunung+Catur",
+//       tanggal: "Pendakian: When Yah",
+//       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
+//     },
+//     {
+//       id: 5,
+//       rank: "#5",
+//       nama: "MT. SANGHYANG",
+//       mdpl: "2.087 MDPL",
+//       status: "pending",
+//       lokasi: "Tabanan",
+//       // lagu: ".",
+//       // audioSrc: "-",
+//       mapUrl: "https://maps.google.com/?q=Gunung+Sanghyang",
+//       tanggal: "Pendakian: When Yah",
+//       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
+//     },
+//     {
+//       id: 6,
+//       rank: "#6",
+//       nama: "MT. ADENG",
+//       mdpl: "1.826 MDPL",
+//       status: "pending",
+//       lokasi: "Tabanan",
+//       // lagu: ".",
+//       // audioSrc: "-",
+//       mapUrl: "https://maps.google.com/?q=Gunung+Adeng",
+//       tanggal: "Pendakian: When Yah",
+//       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
+//     },
+//     {
+//       id: 7,
+//       rank: "#7",
+//       nama: "MT. BATUR",
+//       mdpl: "1.717 MDPL",
+//       status: "pending",
+//       lokasi: "Kintamani",
+//       // lagu: ".",
+//       // audioSrc: "-",
+//       mapUrl: "https://maps.google.com/?q=Gunung+Batur",
+//       tanggal: "Pendakian: When Yah",
+//       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
+//     }
+//   ],
+//   "NTB": [
+//     {
+//       id: 1,
+//       rank: "#1",
+//       nama: "MT. RINJANI",
+//       mdpl: "3.726 MDPL",
+//       status: "pending",
+//       lokasi: "Lombok Timur",
+//       // lagu: ".",
+//       // audioSrc: "-",
+//       mapUrl: "https://maps.google.com/?q=Gunung+Rinjani",
+//       tanggal: "Pendakian: When Yah",
+//       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
+//     },
+//     {
+//       id: 2,
+//       rank: "#2",
+//       nama: "MT. TAMBORA",
+//       mdpl: "2.851 MDPL",
+//       status: "pending",
+//       lokasi: "Sumbawa",
+//       // lagu: ".",
+//       // audioSrc: "-",
+//       mapUrl: "https://maps.google.com/?q=Gunung+Tambora",
+//       tanggal: "Pendakian: When Yah",
+//       foto: ["image/kosong.jpg", "image/kosong.jpg", "image/kosong.jpg"]
+//     }
+//   ]
 };
 
 
@@ -730,8 +731,8 @@ function renderGunung(filter = "") {
     card.className = `card ${isExpanded ? 'expanded' : ''}`;
 
     const statusMark = item.status === "done"
-      ? `<div class="status-badge done">✔</div>`
-      : `<div class="status-badge pending">✕</div>`;
+      ? `<div class="status-badge done">✅</div>`
+      : `<div class="status-badge pending">❌</div>`;
 
     // Widget Pemutar Musik Ungu
     const songBadgeHTML = (isExpanded && item.lagu && item.lagu !== "-") ? `
@@ -777,7 +778,7 @@ function renderGunung(filter = "") {
           </div>
           
           <div class="pendakian-badge">
-            📅 ${item.tanggal || 'Pendakian : When Yah'}
+            🗓️ ${item.tanggal || 'Pendakian : When Yah'}
           </div>
         </div>
       `;
@@ -830,7 +831,7 @@ function renderGunung(filter = "") {
                 <span>${item.lokasi || 'Lokasi'}</span>
               </div>
             </a>
-            <span class="location-hint">ketuk untuk melihat info lokasi</span>
+
           </div>
         </div>
 
