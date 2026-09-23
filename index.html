@@ -1,53 +1,137 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>MDPL ENTHUSIAST</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="image/patrick.jpg" type="image/jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDPL ENTHUSIAST</title>
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./image/favicon/patrick.png?v=2">
+    <link rel="shortcut icon" href="./image/favicon/patrick.png?v=2" type="image/x-icon">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="container">
-    
-    <!-- HALAMAN 1: Pilihan Wilayah -->
-    <div id="page-wilayah" class="page">
-      <h1 class="main-title">MDPL ENTHUSIAST</h1>
-      
-      <!-- Galeri 3 Foto Header -->
-      <div class="profile-gallery">
+    <main id="app">
+        <!-- ================= HALAMAN 1: HERO / HOME ================= -->
+        <section class="page page-hero active-page" id="pageHero" aria-label="Halaman Utama">
+            <div class="hero-overlay"></div>
+            
+            <div class="hero-content container">
+                <header class="hero-body">
+                    <div class="hero-left-content">
+                        <h1 class="hero-title">MDPL ENTHUSIAST</h1>
 
-        <img src="image/patrick.jpg" alt="MDPL Logo 2" class="profile-img" onclick="openImageModal(event, 'image/patrick.jpg')">
-        
-      </div>
-  
-      <!-- Daftar Kartu Wilayah -->
-      <div id="wilayah-list" class="card-list"></div>
+                        <nav class="social-links-container" aria-label="Media Sosial">
+                            <a href="https://instagram.com/ahmdsofyaann" target="_blank" rel="noopener noreferrer" class="social-card" aria-label="Instagram">
+                                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/ahmadsofyann" target="_blank" rel="noopener noreferrer" class="social-card" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://github.com/ahmadsofyannn" target="_blank" rel="noopener noreferrer" class="social-card" aria-label="GitHub">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                            </a>
+                        </nav>
+                    </div>
 
-      <!-- Kolom Jam & Footer Subtitle -->
-      <!-- <div class="card time-card">
-        <div id="current-time" class="time-stamp"></div>
-      </div> -->
-      <p class="footer-subtitle">SEDIKIT DEMI SEDIKIT LAMA-LAMA SEVEN SUMMITS</p>
-    </div>
+                    <div class="hero-profile-card">
+                        <img src="image/icon/patrick.jpg" alt="Foto Profil MDPL Enthusiast" class="hero-profile-img">
+                    </div>
+                </header>
 
-    <!-- HALAMAN 2: Daftar Gunung -->
-    <div id="page-gunung" class="page hidden">
-      <h1 id="title-wilayah" class="main-title">JAWA TIMUR</h1>
-      
-      <button id="btn-back" class="btn-back">&larr; Kembali</button>
-      <div id="gunung-list" class="card-list"></div>
-    </div> <!-- Penutup elemen #page-gunung yang diperbaiki -->
+                <div class="hero-cards">
+                    <article class="hero-card region-card" data-region="JAWA TIMUR">
+                        <span class="card-emoji" role="img" aria-label="Ikon Gunung">🏔️</span>
+                        <h2>Jawa Timur</h2>
+                        <p>East Java</p>
+                        <span class="click-hint"><i class="fa-solid fa-bars-staggered" aria-hidden="true"></i> Lihat Gunung yang Didaki</span>
+                    </article>
 
-    <!-- Modal Preview Gambar -->
-    <div id="image-modal" class="moudal" onclick="closeImageModal()">
-      <span class="close-btn" onclick="closeImageModal()">&times;</span>
-      <img class="modal-content" id="img-preview" alt="Preview Gambar">
-    </div>
+                    <article class="hero-card region-card" data-region="JAWA TENGAH">
+                        <span class="card-emoji" role="img" aria-label="Ikon Gunung">🏔️</span>
+                        <h2>Jawa Tengah</h2>
+                        <p>Central Java</p>
+                        <span class="click-hint"><i class="fa-solid fa-bars-staggered" aria-hidden="true"></i> Lihat Gunung yang Didaki</span>
+                    </article>
 
-  </div>
+                    <article class="hero-card region-card" data-region="JAWA BARAT">
+                        <span class="card-emoji" role="img" aria-label="Ikon Gunung">🏔️</span>
+                        <h2>Jawa Barat</h2>
+                        <p>West Java</p>
+                        <span class="click-hint"><i class="fa-solid fa-bars-staggered" aria-hidden="true"></i> Lihat Gunung yang Didaki</span>
+                    </article>
 
-  <script src="script.js"></script>
+                    <article class="hero-card region-card" data-region="BALI">
+                        <span class="card-emoji" role="img" aria-label="Ikon Gunung">🏔️</span>
+                        <h2>Bali</h2>
+                        <p>Bali Island</p>
+                        <span class="click-hint"><i class="fa-solid fa-bars-staggered" aria-hidden="true"></i> Lihat Gunung yang Didaki</span>
+                    </article>
+
+                    <article class="hero-card region-card" data-region="NTB">
+                        <span class="card-emoji" role="img" aria-label="Ikon Gunung">🏔️</span>
+                        <h2>NTB</h2>
+                        <p>West Nusa Tenggara</p>
+                        <span class="click-hint"><i class="fa-solid fa-bars-staggered" aria-hidden="true"></i> Lihat Gunung yang Didaki</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= HALAMAN 2: DAFTAR GUNUNG ================= -->
+        <section class="page page-trips" id="pageTrips" aria-label="Daftar Gunung">
+            <div class="container">
+                <header class="section-header center">
+                    <div class="trips-nav-wrapper">
+                        <button type="button" class="btn-back" id="btnBackToHome">
+                            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Kembali ke Home
+                        </button>
+                    </div>
+                    <span class="sub-title" id="tripsSubTitle">WILAYAH</span>
+                    <h1>DAFTAR GUNUNG</h1>
+                </header>
+
+                <div class="trips-grid" id="tripsContainer">
+                    <!-- Dynamic Content -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= HALAMAN 3: RIWAYAT PENDAKIAN ================= -->
+        <section class="page page-details" id="pageDetails" aria-label="Detail Pendakian">
+            <div class="container">
+                <div class="details-wrapper">
+                    <header class="details-top-info">
+                        <div class="trips-nav-wrapper">
+                            <button type="button" class="btn-back" id="btnBackToTrips">
+                                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Kembali ke Daftar Gunung
+                            </button>
+                        </div>
+                        <h1 class="details-title">Detail Pendakian</h1>
+                    </header>
+
+                    <div class="trip-history-container" id="tripHistoryContainer">
+                        <!-- Dynamic Content -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= MODAL PREVIEW GAMBAR ================= -->
+    <dialog class="image-modal" id="imageModal" aria-label="Preview Gambar">
+        <button type="button" class="modal-close" id="modalClose" aria-label="Tutup Modal">&times;</button>
+        <img class="modal-content" id="modalImage" alt="Preview Gambar Pendakian">
+    </dialog>
+
+    <script type="module" src="script.js"></script>
 </body>
 </html>
