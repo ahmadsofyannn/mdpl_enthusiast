@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Halaman utama / Home -->
+  <url>
+    <loc>https://domainanda.com/#home</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Halaman Daftar Wilayah Pendakian -->
+  <url>
+    <loc>https://domainanda.com/#trips?region=JAWA%20TIMUR</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://domainanda.com/#trips?region=JAWA%20TENGAH</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://domainanda.com/#trips?region=JAWA%20BARAT</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://domainanda.com/#trips?region=BALI</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://domainanda.com/#trips?region=NTB</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Detail Gunung yang Sudah Didaki (Status: "y") -->
+  
+  <!-- Gunung Raung -->
+  <url>
+    <loc>https://domainanda.com/#details?id=raung</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://domainanda.com/image/database/raung.jpg</image:loc>
+      <image:title>Gunung Raung 3332 MDPL via Sumberwringin</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://domainanda.com/image/gunung/raung1.jpg</image:loc>
+    </image:image>
+  </url>
+
+  <!-- Gunung Buthak -->
+  <url>
+    <loc>https://domainanda.com/#details?id=buthak</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://domainanda.com/image/database/buthak.jpg</image:loc>
+      <image:title>Gunung Buthak 2868 MDPL via Panderman</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://domainanda.com/image/gunung/buthak1.jpg</image:loc>
+    </image:image>
+  </url>
+
+  <!-- Gunung Rante -->
+  <url>
+    <loc>https://domainanda.com/#details?id=rante</loc>
+    <lastmod>2025-11-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://domainanda.com/image/database/rante.jpg</image:loc>
+      <image:title>Gunung Rante 2601 MDPL via Paltuding</image:title>
+    </image:image>
+  </url>
+
+  <!-- Gunung Ijen -->
+  <url>
+    <loc>https://domainanda.com/#details?id=ijen</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://domainanda.com/image/database/ijen.jpg</image:loc>
+      <image:title>Gunung Ijen 2386 MDPL Kawah Blue Fire</image:title>
+    </image:image>
+  </url>
+
+  <!-- Gunung Penanggungan -->
+  <url>
+    <loc>https://domainanda.com/#details?id=penanggungan</loc>
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://domainanda.com/image/database/penanggungan.jpg</image:loc>
+      <image:title>Gunung Penanggungan 1653 MDPL via Tamiajeng</image:title>
+    </image:image>
+  </url>
+
+  <!-- Gunung Gulgulan -->
+  <url>
+    <loc>https://domainanda.com/#details?id=gulgulan</loc>
+    <lastmod>2025-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://domainanda.com/image/database/gulgulan.jpg</image:loc>
+      <image:title>Gunung Gulgulan 1406 MDPL via Patirana</image:title>
+    </image:image>
+  </url>
+
+  <!-- Gunung Tanggus -->
+  <url>
+    <loc>https://domainanda.com/#details?id=tanggus</loc>
+    <lastmod>2024-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://domainanda.com/image/database/tanggus.jpg</image:loc>
+      <image:title>Gunung Tanggus 1251 MDPL via Patirana</image:title>
+    </image:image>
+  </url>
+
+</urlset>

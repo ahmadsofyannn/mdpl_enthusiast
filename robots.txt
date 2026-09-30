@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Allow: /image/database/
+Allow: /image/gunung/
+Allow: /image/label/
+
+Sitemap: https://mdpl-enthusiast.com/sitemap.xml

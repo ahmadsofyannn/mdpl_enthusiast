@@ -1,6 +1,33 @@
 import { databaseGunung, databaseRiwayat } from './data.js';
 
 document.addEventListener('DOMContentLoaded', () => {
+    // ================= HELPER SEO DINAMIS =================
+    function updateMetadataSEO({ title, description, image, url }) {
+        const siteName = "MDPL ENTHUSIAST";
+        
+        // 1. Update Title Browser
+        document.title = title ? `${title} | ${siteName}` : `${siteName} - Portofolio & Catatan Pendakian Gunung`;
+
+        // 2. Update Meta Description
+        let metaDesc = document.querySelector('meta[name="description"]');
+        if (metaDesc) {
+            metaDesc.setAttribute('content', description || 'Portofolio pendakian gunung di Indonesia, dokumentasi jalur, dan catatan riwayat pendakian oleh Ahmad Sofyan.');
+        }
+
+        // 3. Update Open Graph (Preview WhatsApp / Social Media)
+        const ogTitle = document.querySelector('meta[property="og:title"]');
+        if (ogTitle) ogTitle.setAttribute('content', title ? `${title} | ${siteName}` : siteName);
+
+        const ogDesc = document.querySelector('meta[property="og:description"]');
+        if (ogDesc) ogDesc.setAttribute('content', description || 'Portofolio pendakian gunung di Indonesia.');
+
+        const ogImage = document.querySelector('meta[property="og:image"]');
+        if (ogImage && image) ogImage.setAttribute('content', image);
+
+        const ogUrl = document.querySelector('meta[property="og:url"]');
+        if (ogUrl) ogUrl.setAttribute('content', url || window.location.href);
+    }
+
     // DOM Elements
     const pageHero = document.getElementById('pageHero');
     const pageTrips = document.getElementById('pageTrips');
@@ -51,16 +78,19 @@ document.addEventListener('DOMContentLoaded', () => {
             const isSummitted = gunung.status === 'y';
             const statusIconPath = isSummitted ? 'image/label/centang.png' : 'image/label/silang.png';
             
+            // SEO: Atribut alt deskriptif pada gambar
+            const imageAltText = `Pemandangan dan Jalur Pendakian Gunung ${gunung.nama} ${gunung.mdpl || ''} MDPL ${currentRegion}`;
+
             return `
                 <div class="trip-card-wrapper">
                     <div class="status-badge ${isSummitted ? 'summitted' : 'not-summitted'}" title="${isSummitted ? 'Sudah Didaki' : 'Belum Didaki'}">
-                        <img src="${statusIconPath}" alt="${isSummitted ? 'Sudah Didaki' : 'Belum Didaki'}" class="status-img">
+                        <img src="${statusIconPath}" alt="${isSummitted ? 'Sudah Didaki' : 'Belum Didaki'}" class="status-img" width="24" height="24">
                     </div>
                     
                     <article class="trip-card">
-                        <div class="trip-img btn-open-details" data-id="${gunung.id}" role="button" tabindex="0" aria-label="Lihat detail gunung ${gunung.nama}">
+                        <div class="trip-img btn-open-details" data-id="${gunung.id}" role="button" tabindex="0" aria-label="Lihat detail pendakian gunung ${gunung.nama}">
                             ${rankBadge}
-                            <img src="${gunung.gambar}" alt="Gunung ${gunung.nama}" loading="lazy">
+                            <img src="${gunung.gambar}" alt="${imageAltText}" loading="lazy" width="400" height="250">
                             <div class="trip-info">
                                 <div class="title-badge">
                                     <h2 class="trip-title">${gunung.nama}</h2>
@@ -69,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                         
                         <div class="trip-bottom-bar">
-                            <a href="${gunung.linkMaps || '#'}" target="_blank" rel="noopener noreferrer" class="trip-location-badge">
+                            <a href="${gunung.linkMaps || '#'}" target="_blank" rel="noopener noreferrer" class="trip-location-badge" aria-label="Lokasi Google Maps ${gunung.nama}">
                                 <span class="loc-icon">${gmapsIcon}</span>
                                 <span class="loc-city">${kota}</span>
                             </a>
@@ -122,10 +152,13 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        tripHistoryContainer.innerHTML = listRiwayat.map(item => {
-            const photosHTML = item.foto.map(imgUrl => `
-                <div class="photo-card preview-trigger" role="button" tabindex="0" aria-label="Perbesar foto pendakian">
-                    <img src="${imgUrl}" alt="Dokumentasi pendakian ${namaGunung}" onerror="this.src='https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80'">
+        tripHistoryContainer.innerHTML = listRiwayat.map((item, index) => {
+            const photosHTML = item.foto.map((imgUrl, imgIndex) => `
+                <div class="photo-card preview-trigger" role="button" tabindex="0" aria-label="Perbesar foto dokumentasi ${namaGunung}">
+                    <img src="${imgUrl}" 
+                         alt="Dokumentasi foto pendakian ${namaGunung} ${item.via ? 'via ' + item.via : ''} foto ke-${imgIndex + 1}" 
+                         loading="lazy" 
+                         onerror="this.src='https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80'">
                     <div class="photo-overlay"><i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i></div>
                 </div>
             `).join('');
@@ -157,7 +190,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }).join('');
     }
 
-    // 3. Routing Berdasarkan Hash URL
+    // 3. Routing Berdasarkan Hash URL dengan Update Metadata SEO
     function handleRouting() {
         const hash = window.location.hash || '#home';
         
@@ -169,18 +202,42 @@ document.addEventListener('DOMContentLoaded', () => {
             const region = urlParams.get('region') || 'JAWA TIMUR';
             renderGunung(region);
             pageTrips?.classList.add('active-page');
-            document.title = `MDPL ENTHUSIAST - ${region}`;
+
+            // Dynamic SEO Metadata Halaman 2 (#trips)
+            updateMetadataSEO({
+                title: `Daftar Gunung ${region.toUpperCase()}`,
+                description: `Eksplorasi daftar gunung yang telah didaki di wilayah ${region.toUpperCase()} beserta ketinggian MDPL, status pendakian, dan jalurnya.`
+            });
         } 
         else if (hash.startsWith('#details')) {
             const urlParams = new URLSearchParams(hash.split('?')[1]);
             const id = urlParams.get('id');
             renderRiwayat(id);
             pageDetails?.classList.add('active-page');
-            document.title = `MDPL ENTHUSIAST - Detail Pendakian`;
+
+            // Cari data gunung untuk Metadata SEO Spesifik
+            const gunungFound = Object.values(databaseGunung).flat().find(g => g.id === id);
+            if (gunungFound) {
+                updateMetadataSEO({
+                    title: `Pendakian Gunung ${gunungFound.nama} (${gunungFound.mdpl || ''} MDPL)`,
+                    description: `Catatan perjalanan, dokumentasi foto, dan riwayat jalur pendakian Gunung ${gunungFound.nama} di ${gunungFound.lokasi || 'Indonesia'}.`,
+                    image: gunungFound.gambar
+                });
+            } else {
+                updateMetadataSEO({
+                    title: `Detail Pendakian`,
+                    description: `Catatan riwayat pendakian dan foto dokumentasi pendakian gunung.`
+                });
+            }
         } 
         else {
             pageHero?.classList.add('active-page');
-            document.title = `MDPL ENTHUSIAST`;
+
+            // Dynamic SEO Metadata Halaman 1 (#home)
+            updateMetadataSEO({
+                title: `Beranda`,
+                description: `Portofolio pendakian gunung di Indonesia oleh Ahmad Sofyan. Dokumentasi jalur, catatan riwayat pendakian, dan galeri foto outdoor MDPL Enthusiast.`
+            });
         }
     }
 
