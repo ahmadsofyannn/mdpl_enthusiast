@@ -4,4 +4,4 @@ Allow: /image/database/
 Allow: /image/gunung/
 Allow: /image/label/
 
-Sitemap: https://mdpl-enthusiast.com/sitemap.xml
+Sitemap: https://mdpl-enthusiast.vercel.app/sitemap.xml
